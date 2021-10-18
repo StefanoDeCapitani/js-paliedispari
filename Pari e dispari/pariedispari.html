@@ -9,13 +9,18 @@
   <body>
     <h1>Pari e Dispari</h1>
     <p>The game!</p>
-    <h3>Fai la tua scelta e pigia un pulsante:</h3>
-    <button class="btn--even">PARI</button>
-    <button class="btn--odd">DISPARI</button>
-    <h3>Inserisci un numero da 1 a 5:</h3>
-    <input type="number" min="1" max="5" />
+    <form>
+      <h3 for="btn--even">Fai una previsione e inserisci il tuo numero:</h3>
+      <input type="radio" name="btn-even-odd" value="even" id="btn--even" />
+      <label for="btn--even">PARI</label>
+      <input type="radio" name="btn-even-odd" value="odd" id="btn--odd" />
+      <label for="btn--even">DISPARI</label>
+      <label for="number-input">Scegli un numero da 1 a 5:</label>
+      <input type="number" id="number-input" min="1" max="5" />
+      <button type="submit">Gioca</button>
+    </form>
     <h3>Il vincitore è:</h3>
-    <p>Tu!</p>
+    <p id="result">Tu!</p>
     <script src="js/main.js"></script>
   </body>
 </html>
