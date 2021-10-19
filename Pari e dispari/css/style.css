@@ -83,4 +83,5 @@ body {
   background: white;
   display: grid;
   place-content: center;
+  cursor: unset;
 }
