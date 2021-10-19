@@ -1,0 +1,86 @@
+body {
+  height: 100vh;
+  max-height: 100vh;
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plus {
+  width: 3rem;
+}
+
+.number-input-container,
+#number-random {
+  display: flex;
+  width: 4.5rem;
+  height: 3rem;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  align-items: center;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  background-color: white;
+}
+
+#number-random {
+  padding: 0.8rem;
+}
+
+#number-input {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+.input-group {
+  width: 150px;
+}
+
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.radio-buttons {
+  width: 50%;
+}
+
+.radio-description {
+  cursor: unset;
+}
+
+.radio-description:focus,
+#number-input:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: transparent;
+}
+
+.radio-label {
+  inset: 0;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+
+.btn--play {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  margin-top: 1.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+#winner {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  background: white;
+  display: grid;
+  place-content: center;
+}
